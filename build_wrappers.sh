@@ -15,7 +15,7 @@ echo -e "#!/bin/sh\n\nexec docker exec -t -w \$(pwd) go-env doc \$@" > ./wrapper
 echo -e "#!/bin/sh\n\nexec docker exec -t -w \$(pwd) go-env dupl \$@" > ./wrappers/dupl
 echo -e "#!/bin/sh\n\nexec docker exec -t -w \$(pwd) go-env errcheck \$@" > ./wrappers/errcheck
 echo -e "#!/bin/sh\n\nexec docker exec -t -w \$(pwd) go-env fix \$@" > ./wrappers/fix
-echo -e "#!/bin/sh\n\nexec docker exec -t -w \$(pwd) go-env go \$@" > ./wrappers/go
+echo -e "#!/bin/sh\n\nexec docker exec -i -w \$(pwd) go-env go \$@" > ./wrappers/go
 echo -e "#!/bin/sh\n\nexec docker exec -t -w \$(pwd) go-env go-outline \$@" > ./wrappers/go-outline
 echo -e "#!/bin/sh\n\nexec docker exec -t -w \$(pwd) go-env goaddimport \$@" > ./wrappers/goaddimport
 echo -e "#!/bin/sh\n\nexec docker exec -t -w \$(pwd) go-env gochecknoglobals \$@" > ./wrappers/gochecknoglobals
