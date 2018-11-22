@@ -32,6 +32,9 @@ Steps:
         go get -u golang.org/x/tools/cmd/goimports
         go get -u golang.org/x/tools/cmd/gorename
         go get -u golang.org/x/tools/cmd/guru
+        go get -u github.com/jgautheron/goconst/cmd/goconst
+        go get -u github.com/gordonklaus/ineffassign
+        go get -u golang.org/x/lint/golint
         # all this will be cached in the .cache dir
 
 5. start atom from your golang project root with `/path/to/start_atom.sh`
