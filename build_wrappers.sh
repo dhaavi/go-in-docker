@@ -26,7 +26,7 @@ echo -e "#!/bin/sh\n\nexec docker exec -t -w \$(pwd) go-env gocyclo \$@" > ./wra
 echo -e "#!/bin/sh\n\nexec docker exec -t -w \$(pwd) go-env godef \$@" > ./wrappers/godef
 echo -e "#!/bin/sh\n\nexec docker exec -t -w \$(pwd) go-env godoc \$@" > ./wrappers/godoc
 echo -e "#!/bin/sh\n\nexec docker exec -t -w \$(pwd) go-env gofmt \$@" > ./wrappers/gofmt
-echo -e "#!/bin/sh\n\nexec docker exec -t -w \$(pwd) go-env gogetdoc \$@" > ./wrappers/gogetdoc
+echo -e "#!/bin/sh\n\nexec docker exec -i -w \$(pwd) go-env gogetdoc \$@" > ./wrappers/gogetdoc
 echo -e "#!/bin/sh\n\nexec docker exec -i -w \$(pwd) go-env goimports \$@" > ./wrappers/goimports
 echo -e "#!/bin/sh\n\nexec docker exec -t -w \$(pwd) go-env golint \$@" > ./wrappers/golint
 echo -e "#!/bin/sh\n\nexec docker exec -t -w \$(pwd) go-env gometalinter \$@" > ./wrappers/gometalinter
@@ -38,7 +38,7 @@ echo -e "#!/bin/sh\n\nexec docker exec -t -w \$(pwd) go-env gosec \$@" > ./wrapp
 echo -e "#!/bin/sh\n\nexec docker exec -t -w \$(pwd) go-env gosimple \$@" > ./wrappers/gosimple
 echo -e "#!/bin/sh\n\nexec docker exec -t -w \$(pwd) go-env gotype \$@" > ./wrappers/gotype
 echo -e "#!/bin/sh\n\nexec docker exec -t -w \$(pwd) go-env gotypex \$@" > ./wrappers/gotypex
-echo -e "#!/bin/sh\n\nexec docker exec -t -w \$(pwd) go-env guru \$@" > ./wrappers/guru
+echo -e "#!/bin/sh\n\nexec docker exec -i -w \$(pwd) go-env guru \$@" > ./wrappers/guru
 echo -e "#!/bin/sh\n\nexec docker exec -t -w \$(pwd) go-env ineffassign \$@" > ./wrappers/ineffassign
 echo -e "#!/bin/sh\n\nexec docker exec -t -w \$(pwd) go-env interfacer \$@" > ./wrappers/interfacer
 echo -e "#!/bin/sh\n\nexec docker exec -t -w \$(pwd) go-env link \$@" > ./wrappers/link
